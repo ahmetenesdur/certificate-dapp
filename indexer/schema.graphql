@@ -1,0 +1,17 @@
+type Certification @entity(immutable: true) {
+  id: ID!
+  hash: String! # string
+  message: String! # string
+  category: String! # string
+  author: Bytes! # address
+  holder: Bytes! # address
+  timestamp: BigInt! # uint256
+}
+
+type Coffee @entity(immutable: true) {
+  id: ID!
+  buyer: Bytes! # address
+  holder: Bytes! # address
+  message: String! # string
+  timestamp: BigInt! # uint256
+}

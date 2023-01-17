@@ -1,0 +1,27 @@
+specVersion: 0.0.5
+schema:
+  file: schema.graphql
+dataSources:
+  - kind: ethereum
+    name: Certificate
+    network: goerli
+    source:
+      address: "0x66e724fC670bC762DE2423E04DDDc519A4d88029"
+      abi: Certificate
+      startBlock: 8322243
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Certification
+        - Coffee
+      abis:
+        - name: Certificate
+          file: Certificate\abis\Certificate.json
+      eventHandlers:
+        - event: CertificationCreated(uint256,string,string,string,address,address,uint256)
+          handler: handleCertificationCreated
+        - event: CoffeeBought(uint256,address,address,string,uint256)
+          handler: handleCoffeeBought
+      file: Certificate\Certificate.wasm
