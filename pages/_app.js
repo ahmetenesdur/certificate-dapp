@@ -1,18 +1,22 @@
-import { ChakraProvider } from '@chakra-ui/react'
-import { extendTheme } from '@chakra-ui/react'
+import { ChakraProvider } from "@chakra-ui/react";
+import { extendTheme } from "@chakra-ui/react";
 
-import { EthereumClient, modalConnectors, walletConnectProvider, } from "@web3modal/ethereum";
+import {
+  EthereumClient,
+  modalConnectors,
+  walletConnectProvider,
+} from "@web3modal/ethereum";
 import { Web3Modal } from "@web3modal/react";
 import { configureChains, createClient, WagmiConfig } from "wagmi";
 import { goerli } from "wagmi/chains";
 import { ApolloProvider } from "@apollo/client";
 
-import "@fontsource/m-plus-rounded-1c"
-import "@fontsource/open-sans"
-import Layout from '../components/Layout'
+import "@fontsource/m-plus-rounded-1c";
+import "@fontsource/open-sans";
+import Layout from "../components/Layout";
 
 import client from "../apollo-client";
-import '../styles/globals.css'
+import "../styles/globals.css";
 
 const chains = [goerli];
 
@@ -34,10 +38,10 @@ const ethereumClient = new EthereumClient(wagmiClient, chains);
 
 export const theme = extendTheme({
   fonts: {
-    heading: 'M PLUS Rounded 1c',
-    body: 'Open Sans',
+    heading: "M PLUS Rounded 1c",
+    body: "Open Sans",
   },
-})
+});
 
 export default function App({ Component, pageProps }) {
   return (
@@ -57,5 +61,5 @@ export default function App({ Component, pageProps }) {
         themeColor="purple"
       />
     </ApolloProvider>
-  )
+  );
 }

@@ -64,7 +64,7 @@ const Layout = ({ children }) => {
       w="100vw"
       position="relative"
       zIndex="0"
-      bg={useColorModeValue("white", "#171923")}
+      bg={useColorModeValue("white", "gray.800")}
     >
       <Box px={4} maxWidth={"5xl"} m={"auto"} mt={"5"}>
         <Flex h={"16"} alignItems={"center"} justifyContent={"space-between"}>
