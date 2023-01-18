@@ -1,7 +1,8 @@
 require("@nomicfoundation/hardhat-toolbox");
 require("@nomiclabs/hardhat-etherscan");
-require('dotenv').config({
-  path: './.env.local'
+// Import the dotenv library to read environment variables from the .env.local file
+require("dotenv").config({
+  path: "./.env.local",
 });
 
 /** @type import('hardhat/config').HardhatUserConfig */
@@ -15,5 +16,5 @@ module.exports = {
   },
   etherscan: {
     apiKey: process.env.ETHERSCAN_API_KEY,
-  }
+  },
 };
