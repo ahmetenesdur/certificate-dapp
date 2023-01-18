@@ -61,7 +61,7 @@ const Layout = ({ children }) => {
   return (
     <Box
       h="100vh"
-      w="100vw"
+      w="screen"
       position="relative"
       zIndex="0"
       bg={useColorModeValue("white", "gray.800")}
@@ -170,7 +170,7 @@ const Layout = ({ children }) => {
                   size={"sm"}
                   mr={4}
                   leftIcon={<AddIcon />}
-                  onClick={() => {}}
+                  onClick={onModalOpen}
                 >
                   Certifying
                 </Button>
