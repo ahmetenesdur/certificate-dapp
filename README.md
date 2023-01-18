@@ -65,9 +65,9 @@ You need to have Node.js, NPM and hardhat installed on your computer, before run
    ```sh
    npx hardhat run scripts/verify.js --network goerli
    ```
-7. Deploy subgraph (optional, since it is already deployed in hosted service)
+7. Deploy subgraph to The Graph
 
-   Guite to deploy subgraph: https://thegraph.com/docs/quick-start
+   Guide to deploy subgraph: https://thegraph.com/docs/en/cookbook/quick-start/
 
 8. Get subgraph query endpoint after deployment and update it in `apollo-client.js`
 
