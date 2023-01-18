@@ -1,12 +1,13 @@
 # Paribu Hub - Smart Contract & Solidity Practicum Final Case
 
 ## Certificate dApp
+I started my final case project with this project (https://github.com/ahmetenesdur/confesster-dapp) and it has evolved into the project you are currently reviewing. If you wish, you can also review this project.
 
-Certificate is a project built on top of Goerli test network and The Graph, that allows users to create, view new certifying. They can also buy coffee to each other.
+The certificate project allows users to create a certificate that is linked to their Ethereum address and can be used to prove ownership of a digital asset. The project also provides a platform for users to view and manage their certificates, as well as view the transactions that have taken place on the network. Additionally, users can buy coffee for each other using the certificates, which is an innovative way of incentivizing people to use the network.
 
 ##### The project is built using the following technologies:
 
-NextJS, ChakraUI, Solidity, Hardhat, Ether.js, Alchemy API, IPFS - Web3 Storage, The Graph, Etherscan, and Goerli Testnet.
+NextJS, ChakraUI, Solidity, Hardhat, Ether.js, Alchemy API, IPFS - Web3 Storage, The Graph, Etherscan and Goerli Testnet.
 
 To see the project in action, visit the following link:
 

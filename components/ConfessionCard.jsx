@@ -34,7 +34,7 @@ const ConfessionCard = ({
   };
 
   const { data, isError, isLoading } = useEnsName({
-    address: "0x995a99b34714067B0281747286681C9F0170AbE1",
+    address: author,
     chainId: 5,
   });
 
@@ -86,7 +86,7 @@ const ConfessionCard = ({
             Certificate Holder: {holder.substring(0, 6)}...{holder.substring(holder.length - 4)}
           </chakra.p>
 
-          {author == "0x995a99b34714067B0281747286681C9F0170AbE1" ? (
+          {data ? (
             <chakra.p fontWeight={"bold"} fontSize={14}>
               {data}
               <chakra.span fontWeight={"medium"} color={"gray.500"}>
