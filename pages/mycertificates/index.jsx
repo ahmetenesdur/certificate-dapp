@@ -2,7 +2,7 @@ import { useQuery, gql } from "@apollo/client";
 import { Grid, GridItem } from "@chakra-ui/react";
 import { useAccount } from "wagmi";
 
-import ConfessionCard from "../../components/ConfessionCard";
+import CertificationCard from "../../components/CertificationCard";
 import ConfessionCardSkeleton from "../../components/skeleton/ConfessionCardSkeleton";
 
 const GET_CERTIFICATIONS = gql`
@@ -65,7 +65,7 @@ export default function MyConfession() {
               ))
             : data?.certifications?.map((confession, index) => (
                 <GridItem colSpan={1} key={confession.id}>
-                  <ConfessionCard confession={confession} index={index} />
+                  <CertificationCard confession={confession} index={index} />
                 </GridItem>
               ))}
         </Grid>

@@ -20,7 +20,7 @@ import {
 import saveToIPFS from "../utils/saveToIPFS";
 import getContract from "../utils/getContract";
 
-const ConfessionModal = ({ isOpen, onClose }) => {
+const CertificationModal = ({ isOpen, onClose }) => {
   const toast = useToast();
 
   const [audio, setAudio] = useState(null);
@@ -157,4 +157,4 @@ const ConfessionModal = ({ isOpen, onClose }) => {
   );
 };
 
-export default ConfessionModal;
+export default CertificationModal;

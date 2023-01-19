@@ -22,7 +22,7 @@ import {
   SunIcon,
 } from "@chakra-ui/icons";
 
-import ConfessionModal from "./ConfessionModal";
+import CertificationModal from "./CertificationModal";
 
 const links = [
   { label: "My Certificates", to: "/mycertificates" },
@@ -202,7 +202,7 @@ const Layout = ({ children }) => {
         {children}
       </Box>
 
-      <ConfessionModal isOpen={isModalOpen} onClose={onModalClose} />
+      <CertificationModal isOpen={isModalOpen} onClose={onModalClose} />
     </Box>
   );
 };

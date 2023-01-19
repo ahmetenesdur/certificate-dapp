@@ -3,9 +3,9 @@
 // This line specifies that the code is written in Solidity version 0.8.9 or higher.
 pragma solidity ^0.8.9;
 
-// This line imports the "console.sol" file from the "hardhat" library. This is used for logging messages to the console.
+// This is used for logging messages to the console.
 import "hardhat/console.sol";
-// This line imports the "Counters.sol" file from the "@openzeppelin/contracts/utils" library. This is used for maintaining a counter for certifications and coffees.
+// This is used for maintaining a counter for certifications and coffees.
 import "@openzeppelin/contracts/utils/Counters.sol";
 
 contract Certificate {
@@ -21,7 +21,7 @@ contract Certificate {
     // This line creates a public mapping "certification" of type "uint256" to "Certification". This is used for storing the certification information.
     mapping(uint256 => Certification) public certification;
 
-    // This line defines a struct "Certification" which is used to store certification information. It has several fields such as "id", "hash", "message", "category", "author", "holder" and "timestamp".
+    // This line defines a struct "Certification" which is used to store certification information.
     struct Certification {
         uint256 id;
         string hash;
@@ -101,7 +101,7 @@ contract Certificate {
     function buyCoffee(address _holder, string memory _message) public payable {
         require(bytes(_message).length > 0, "Message must not be empty");
         require(msg.sender != address(0x0), "Sender must not be empty");
-        require(msg.value == coffeePrice, "Coffee price must be 0.0001 ether");
+        require(msg.value == coffeePrice, "Coffee price must be 0.01 ether");
         require(msg.sender != _holder, "You can't buy coffee for yourself");
 
         // Increment the coffee count.
@@ -112,6 +112,11 @@ contract Certificate {
         payable(_holder).transfer(msg.value);
 
         // Trigger an event.
-        emit CoffeeBought(id, msg.sender, _holder, _message, block.timestamp);
+        emit CoffeeBought(
+            id, msg.sender,
+            _holder,
+            _message,
+            block.timestamp
+        );
     }
 }

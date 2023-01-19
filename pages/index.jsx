@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useQuery, gql } from "@apollo/client";
 import { Grid, GridItem, Heading, Text } from "@chakra-ui/react";
 
-import ConfessionCard from "../components/ConfessionCard";
+import CertificationCard from "../components/CertificationCard";
 import ConfessionCardSkeleton from "../components/skeleton/ConfessionCardSkeleton";
 import Filter from "../components/Filter";
 
@@ -93,7 +93,7 @@ export default function Home() {
               ))
             : data?.certifications?.map((confession, index) => (
                 <GridItem colSpan={1} key={confession.id}>
-                  <ConfessionCard confession={confession} index={index} />
+                  <CertificationCard confession={confession} index={index} />
                 </GridItem>
               ))}
         </Grid>
