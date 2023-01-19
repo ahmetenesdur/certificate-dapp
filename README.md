@@ -16,7 +16,7 @@ To see the project in action, visit the following link:
 
 To better understand watch my presentation on loom:
 
-[![loom](https://img.shields.io/badge/loom-230?style=for-the-badge&logo=loom&logoColor=white)]()
+[![loom](https://img.shields.io/badge/loom-230?style=for-the-badge&logo=loom&logoColor=white)](https://www.loom.com/share/e42d8549c5474f3abdcf893a9aaeaecf)
 
 <!-- GETTING STARTED -->
 
