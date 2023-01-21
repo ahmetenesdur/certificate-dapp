@@ -8,7 +8,7 @@ The certificate project allows users to create a certificate that is linked to t
 
 ##### The project is built using the following technologies:
 
-NextJS, ChakraUI, Solidity, Hardhat, Ether.js, Alchemy API, [IPFS - Web3 Storage](https://web3.storage/), The Graph, Etherscan and Goerli Testnet.
+NextJS, ChakraUI, Solidity, Hardhat, Ether.js, Alchemy API, [IPFS - Web3 Storage](https://web3.storage/), [The Graph](https://thegraph.com/en/), Etherscan and Goerli Testnet.
 
 To see the project in action, visit the following link:
 
@@ -24,16 +24,16 @@ To better understand watch my presentation on loom:
 
 To get this application up and and running on your local machine follow these simple steps.
 
+### Prerequisites
+
+You need to have Node.js, NPM and hardhat installed on your computer, before running this project.
+
 Wallet Connect Modals :
 https://docs.walletconnect.com/2.0/web3modal/about or
 https://www.rainbowkit.com/docs/introduction
 
 Ethereum React Hooks :
 https://wagmi.sh/react/getting-started
-
-### Prerequisites
-
-You need to have Node.js, NPM and hardhat installed on your computer, before running this project.
 
 ### Installation
 
